@@ -249,7 +249,7 @@ void solution(double a, double b, int noOfTerms, int* noOfRoots, double* coeff, 
 		for (int j = 0;j < noOfTerms;j++) {
 			ans += coeff[j] * pow(a, power[j]);
 		}
-		if (ans > 1000000 || ans < -1000000)
+		if (ans > 100000 || ans < -100000)
 			continue;
 		if (ans == 0) {
 			*noOfRoots += 1;
